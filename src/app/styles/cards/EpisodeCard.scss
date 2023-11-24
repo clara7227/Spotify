@@ -1,0 +1,181 @@
+@import "../variables.modules";
+
+//DEFAULTCARD
+.EpisodeCard {
+    display: flex;
+    padding: 1em;
+  
+   
+}
+.EpisodeCard:hover {
+    background-color: $gris-2-oscuro;
+    border-radius: 8px;
+    border-bottom: 0px;
+    .CardButtonContainerActions {
+        display: flex;
+    }
+}
+.Title {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.Title {
+    h6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    font-size: 1em;
+    font-weight: 700;
+    margin:0 0 0 0.4em;
+        line-height: 1.5em;
+    }
+}
+.SmallTitle {
+    margin-top: 0.6em;
+    color: $gris-1-muy-claro;
+}
+//img
+.CardImgContainer {
+    margin-right: 1em;
+}
+.CardButtonContainerDesktop {
+    display: flex;
+}
+.CardButtonContainerMobile {
+    display: flex;
+    flex-direction: column;
+}
+.CardButtonContainerActions {
+    margin-left: auto;
+    display: none;
+    span {
+        font-size:1.6em;
+        margin: 0.6em 0.5em 0 0.5em;
+        color: $gris-1-muy-claro;
+    }
+}
+
+.CardButtonGroup {
+    display: flex;
+    justify-content: space-between;
+}
+#MoreVertButton {
+    display:none
+}
+//NEXT
+.NextCardContainer {
+    background: $gris-2-oscuro;
+    color: white;
+    margin: $padding-sides;
+    padding: 1em 1em;
+    border-radius:8px;
+    
+    .CardImgContainer {
+        margin-right: 0;
+    }
+    .CardImg {
+        display: none;
+    }
+    #MoreVertButton {
+        display:none;
+    }
+    .CardButtonContainerDesktop{
+   }
+    //PLAY
+    .PlayButton {
+        span {
+        color: $colormarca;
+    }
+    }
+}
+.NextCardContainer:hover {
+    background-color: $gris-3-oscuro;
+    .EpisodeCard:hover {
+        background-color: $gris-3-oscuro;
+    }
+}
+#NextTag {
+    color: $gris-1-muy-claro;
+    margin: 0 0 0.4em 0;
+
+}
+.NotificationNew {
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background-color: $azul-spotify;
+    padding: 0.2em;
+    margin-top: 0.3em;
+}
+//ALLCARDS 
+.AllCards {
+    padding: $padding-sides;
+    .EpisodeCard{
+        border-bottom: $gris-2-oscuro 2px solid;
+    }
+}
+.AllCardsMenu {
+    list-style-type: none;
+    padding: 0;
+    li {
+        font-size: 1em;
+        margin: 0 1.4em 0 0;
+        padding:0.6em 0;
+    }
+    .AllCardsMenuItem {
+        color: white;       
+        border-bottom: $colormarca 2px solid;
+        font-weight: 600;
+    }
+    .AllCardsMenuItemSelected {
+        font-weight: 400;
+        a {
+            color: $gris-1-muy-claro;
+        }        
+        border-bottom: $gris-1-oscuro 4px solid;
+    }
+}
+
+img {
+    border-radius: 4px;
+}
+.AllCards #NextTag {
+    display: none
+}
+.TitleAllCards {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.8em;
+    margin-bottom:1em;
+    .Title {
+        font-weight:600;
+    }
+}
+.AllCardsAllEpisodes {
+    display: flex;
+    .Title {
+        margin: 0.2em 0 0 0.2em;
+    }
+    span {
+        margin: 0 0 0.8em 0.4em
+    }
+
+}
+.AllCardsRecent {
+    font-weight: 600;
+    display: flex;
+    .Title {
+        margin: 0.2em 0 0 0.2em;
+    }
+}
+#DescriptionTag {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 50px;
+    position: relative;
+}

@@ -1,0 +1,95 @@
+.TopCardContainer {
+  margin: 1.4em 0 0 0;
+  color: white;
+}
+
+.TopCardButtons {
+  display: flex;
+}
+.TopCardButtons span {
+  margin-left: 0.7em;
+  font-size: 2em;
+  color: rgb(163, 161, 154);
+}
+.TopCardButtons span:hover {
+  color: white;
+}
+
+.TopCardHeader {
+  display: flex;
+  margin: 0;
+  padding: 1.6em;
+}
+.TopCardHeader img {
+  margin-top: 5em;
+  border-radius: 4px;
+}
+.TopCardHeader .TopCardMainInfo {
+  margin: 4.4em 0 0 1.4em;
+}
+.TopCardHeader p {
+  font-size: 0.8em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.TopCardActions {
+  margin: 0;
+}
+
+.FollowButton {
+  border-radius: 24px;
+  font-size: 0.78em;
+  font-weight: 700;
+  height: 30px;
+  padding: 0.1em 1em 0 1em;
+  margin: 0;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(115, 115, 115);
+}
+
+.TopCardExtendedInfo {
+  background: linear-gradient(to bottom, rgb(86, 82, 0), rgb(22, 22, 11), rgb(21, 21, 21));
+  padding: 0.5em 1.6em;
+}
+
+.TopCardDescriptionContainer {
+  margin-top: 3em;
+}
+.TopCardDescriptionContainer p {
+  font-size: 0.9em;
+  color: rgb(163, 161, 154);
+  font-weight: 500;
+}
+
+.TopCardTags {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.Tag {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgb(32, 32, 32);
+  border-radius: 20px;
+  display: flex;
+  padding: 0.5em 1em 0.7em 1em;
+  margin-right: 0.6em;
+  color: white;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+  margin: 0.6em auto 1em 0;
+  flex-wrap: wrap;
+}
+
+#TagStars span {
+  font-size: 1.4em;
+  margin: 0 0.3em;
+}
+
+#TagLanguageLevel {
+  background-color: rgb(133, 18, 228);
+}/*# sourceMappingURL=TopCard.css.map */

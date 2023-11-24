@@ -1,0 +1,132 @@
+@import "../variables.modules";
+@import "../mixins.scss";
+.MainTop {
+  background: linear-gradient(
+    to bottom,
+    rgb(242, 230, 0),
+    rgb(75, 67, 1),
+    rgb(0, 0, 0));
+}
+.NavContainer {
+  height: 70px;
+  position: fixed;
+  width: 65vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $padding-sides;
+  color: white;
+  transition: all 0.3s ease;
+  .Navigation {
+    display: flex;
+    margin-top: 6px;
+    height: 46px;
+    padding: 0;
+    span:first-child {
+      @include ButtonNavPrev;
+      margin-right: 8px;
+      
+    }
+    span{
+      @include ButtonNavNext;
+    }
+  }
+  li {
+    height: 30px;
+    position: relative;
+    margin: 0.6em;
+    list-style-type: none;
+  }
+  .ButtonGroup {
+    display: flex;
+    margin-top: 1em;
+    li {
+      margin: 0 0.2em 0 0.2em;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    span {
+      @include ButtonNav;
+      margin: 0;
+    }
+
+  }
+}
+//SCROLLED
+.NavContainerScrolled {
+  height: 70px;
+  position: fixed;
+  width: 65vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $padding-sides;
+  color: white;
+  background:rgb(150, 142, 0);
+  border-radius:  6px 6px 0 0;
+  transition: all 0.3s ease;
+  z-index: 18;
+  .Navigation {
+    display: flex;
+    margin-top: 6px;
+    height: 46px;
+    padding: 0;
+    span:first-child {
+      @include ButtonNavPrev;
+      margin-right: 8px;
+    }
+    span {
+      @include ButtonNavNext;
+    }
+  }
+  li {
+    height: 30px;
+    position: relative;
+    margin: 0.6em;
+    list-style-type: none;
+  }
+  .ButtonGroup {
+    display: flex;
+    margin-top: 1em;
+    li {
+      margin: 0 0.2em 0 0.2em;
+      white-space: nowrap;
+      text-overflow: hidden;
+    }
+    span {
+      @include ButtonNav;
+      margin: 0;
+    }
+  }
+}
+.ShowNameDisplay {
+  display: flex;
+  padding: 0.8em 0 0 0.4em;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.ShowNameDisplayNot {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.Navigation {
+  position: relative;
+}
+
+// BOTONES DERECHA
+
+.DiscoverButton {
+  @include ButtonStandard;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.ProfileButton {
+  background-color: $gris-2-oscuro-alfa;
+  border-radius: 24px;
+  height: 30px;
+  width: 30px;
+  padding: 0.15em 0.31em;
+  img {
+    border-radius: 24px;
+    margin: auto;
+  }
+}

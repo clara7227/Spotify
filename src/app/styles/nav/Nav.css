@@ -1,0 +1,161 @@
+.MainTop {
+  background: linear-gradient(to bottom, rgb(242, 230, 0), rgb(75, 67, 1), rgb(0, 0, 0));
+}
+
+.NavContainer {
+  height: 70px;
+  position: fixed;
+  width: 65vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.6em;
+  color: white;
+  transition: all 0.3s ease;
+}
+.NavContainer .Navigation {
+  display: flex;
+  margin-top: 6px;
+  height: 46px;
+  padding: 0;
+}
+.NavContainer .Navigation span:first-child {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.37em 0.3em 0.23em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.NavContainer .Navigation span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.25em 0.3em 0.35em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+}
+.NavContainer li {
+  height: 30px;
+  position: relative;
+  margin: 0.6em;
+  list-style-type: none;
+}
+.NavContainer .ButtonGroup {
+  display: flex;
+  margin-top: 1em;
+}
+.NavContainer .ButtonGroup li {
+  margin: 0 0.2em 0 0.2em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.NavContainer .ButtonGroup span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.3em 0.3em 0.28em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.NavContainerScrolled {
+  height: 70px;
+  position: fixed;
+  width: 65vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.6em;
+  color: white;
+  background: rgb(150, 142, 0);
+  border-radius: 6px 6px 0 0;
+  transition: all 0.3s ease;
+  z-index: 18;
+}
+.NavContainerScrolled .Navigation {
+  display: flex;
+  margin-top: 6px;
+  height: 46px;
+  padding: 0;
+}
+.NavContainerScrolled .Navigation span:first-child {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.37em 0.3em 0.23em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.NavContainerScrolled .Navigation span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.25em 0.3em 0.35em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+}
+.NavContainerScrolled li {
+  height: 30px;
+  position: relative;
+  margin: 0.6em;
+  list-style-type: none;
+}
+.NavContainerScrolled .ButtonGroup {
+  display: flex;
+  margin-top: 1em;
+}
+.NavContainerScrolled .ButtonGroup li {
+  margin: 0 0.2em 0 0.2em;
+  white-space: nowrap;
+  text-overflow: hidden;
+}
+.NavContainerScrolled .ButtonGroup span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.3em 0.3em 0.28em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.ShowNameDisplay {
+  display: flex;
+  padding: 0.8em 0 0 0.4em;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ShowNameDisplayNot {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.Navigation {
+  position: relative;
+}
+
+.DiscoverButton {
+  border-radius: 24px;
+  height: 46px;
+  padding: 0.5em 1.4em 0em 1.4em;
+  font-size: 0.78em;
+  font-weight: 700;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.ProfileButton {
+  background-color: rgba(32, 32, 32, 0.714);
+  border-radius: 24px;
+  height: 30px;
+  width: 30px;
+  padding: 0.15em 0.31em;
+}
+.ProfileButton img {
+  border-radius: 24px;
+  margin: auto;
+}/*# sourceMappingURL=Nav.css.map */

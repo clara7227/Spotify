@@ -1,0 +1,1333 @@
+@charset "UTF-8";
+.MainTop {
+  background: linear-gradient(to bottom, rgb(242, 230, 0), rgb(75, 67, 1), rgb(0, 0, 0));
+}
+
+.NavContainer {
+  height: 70px;
+  position: fixed;
+  width: 65vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.6em;
+  color: white;
+  transition: all 0.3s ease;
+}
+.NavContainer .Navigation {
+  display: flex;
+  margin-top: 6px;
+  height: 46px;
+  padding: 0;
+}
+.NavContainer .Navigation span:first-child {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.37em 0.3em 0.23em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.NavContainer .Navigation span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.25em 0.3em 0.35em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+}
+.NavContainer li {
+  height: 30px;
+  position: relative;
+  margin: 0.6em;
+  list-style-type: none;
+}
+.NavContainer .ButtonGroup {
+  display: flex;
+  margin-top: 1em;
+}
+.NavContainer .ButtonGroup li {
+  margin: 0 0.2em 0 0.2em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.NavContainer .ButtonGroup span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.3em 0.3em 0.28em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.NavContainerScrolled {
+  height: 70px;
+  position: fixed;
+  width: 65vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.6em;
+  color: white;
+  background: rgb(150, 142, 0);
+  border-radius: 6px 6px 0 0;
+  transition: all 0.3s ease;
+  z-index: 18;
+}
+.NavContainerScrolled .Navigation {
+  display: flex;
+  margin-top: 6px;
+  height: 46px;
+  padding: 0;
+}
+.NavContainerScrolled .Navigation span:first-child {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.37em 0.3em 0.23em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.NavContainerScrolled .Navigation span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.25em 0.3em 0.35em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+}
+.NavContainerScrolled li {
+  height: 30px;
+  position: relative;
+  margin: 0.6em;
+  list-style-type: none;
+}
+.NavContainerScrolled .ButtonGroup {
+  display: flex;
+  margin-top: 1em;
+}
+.NavContainerScrolled .ButtonGroup li {
+  margin: 0 0.2em 0 0.2em;
+  white-space: nowrap;
+  text-overflow: hidden;
+}
+.NavContainerScrolled .ButtonGroup span {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.3em 0.3em 0.28em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.ShowNameDisplay {
+  display: flex;
+  padding: 0.8em 0 0 0.4em;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ShowNameDisplayNot {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.Navigation {
+  position: relative;
+}
+
+.DiscoverButton {
+  border-radius: 24px;
+  height: 46px;
+  padding: 0.5em 1.4em 0em 1.4em;
+  font-size: 0.78em;
+  font-weight: 700;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.ProfileButton {
+  background-color: rgba(32, 32, 32, 0.714);
+  border-radius: 24px;
+  height: 30px;
+  width: 30px;
+  padding: 0.15em 0.31em;
+}
+.ProfileButton img {
+  border-radius: 24px;
+  margin: auto;
+}
+
+.MainMenu {
+  color: rgb(212, 212, 212);
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  overflow: auto;
+  min-width: 270px;
+  position: fixed;
+  margin: 8px;
+}
+
+.MainMenuItems {
+  position: fixed;
+  height: 164px;
+  width: 33vw;
+  min-width: 270px;
+}
+
+.MainMenuItemContainer {
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(163, 161, 154);
+  padding: 0.4em 0 2em 1.4em;
+  background-color: rgb(21, 21, 21);
+  border-radius: 0 0 8px 8px;
+  height: 46px;
+  transition: 160ms ease-in-out;
+}
+.MainMenuItemContainer span {
+  margin-right: 0.7em;
+}
+
+.MainMenuItemContainer:first-child {
+  padding: 1.2em 0 2em 1.4em;
+  height: 58px;
+  border-radius: 8px 8px 0 0;
+}
+
+.MainMenuItemContainer:last-child {
+  justify-content: space-between;
+  border-radius: 8px 8px 0 0;
+  margin: 0.5em 0 0 0;
+  height: 58px;
+  padding: 1.2em 0 2em 1.4em;
+}
+
+.MainMenuItemContainer:hover {
+  color: white;
+  transition: 160ms ease-in-out;
+  cursor: pointer;
+}
+
+.MainMenuItemContainer:last-child:hover {
+  color: rgb(163, 161, 154);
+  transition: 160ms ease-in-out;
+}
+
+#LibraryItemContainer {
+  display: flex;
+  transition: 160ms ease-in-out;
+}
+
+#LibraryItemContainer:hover {
+  color: white;
+  transition: 160ms ease-in-out;
+}
+
+.LightIcons span {
+  margin: -0.1em 0.5em 0 0;
+  border-radius: 20px;
+  padding: 0.1em;
+  transition: 160ms ease-in-out;
+}
+.LightIcons span:hover {
+  background-color: rgb(32, 32, 32);
+  transition: 160ms ease-in-out;
+}
+
+.LibraryTagsContainer {
+  height: 54px;
+  width: 33vw;
+  min-width: 270px;
+  display: flex;
+  position: fixed;
+  background-color: rgb(21, 21, 21);
+  flex-direction: row;
+}
+
+.LibraryTags {
+  display: flex;
+  padding: 0.4em 0 0 1em;
+  overflow: hidden;
+  width: 100vw;
+  min-width: 240px;
+  max-width: 400px;
+  -webkit-mask-image: linear-gradient(to right, black 0%, black 50%, transparent 100%);
+          mask-image: linear-gradient(to right, black 0%, black 50%, transparent 100%);
+}
+.LibraryTags li {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgb(32, 32, 32);
+  border-radius: 20px;
+  display: flex;
+  padding: 0.5em 1em 0.7em 1em;
+  margin-right: 0.6em;
+  color: white;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.LibraryTags li:hover {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgb(44, 44, 44);
+  border-radius: 20px;
+  display: flex;
+  padding: 0.5em 1em 0.7em 1em;
+  margin-right: 0.6em;
+  color: white;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.LibraryTag {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgb(32, 32, 32);
+  border-radius: 20px;
+  display: flex;
+  padding: 0.5em 1em 0.7em 1em;
+  margin-right: 0.6em;
+  color: white;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.LibraryTag:hover {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgb(44, 44, 44);
+  border-radius: 20px;
+  display: flex;
+  padding: 0.5em 1em 0.7em 1em;
+  margin-right: 0.6em;
+  color: white;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+#LibraryTagsSlider {
+  background-color: rgb(32, 32, 32);
+  border-radius: 24px;
+  padding: 0.3em 0.25em 0.3em 0.35em;
+  margin: 0.5em 0.8em 0.3em 0;
+  opacity: 0.7;
+  font-size: 1.2em;
+  align-self: flex-start;
+}
+
+#LibraryTagsSlider:hover {
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+
+.LibraryItemsListContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0 0 0;
+}
+
+.LibraryItem {
+  display: flex;
+}
+
+.LibrarySearch {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(163, 161, 154);
+  padding: 0 1em 1em 1em;
+}
+.LibrarySearch span {
+  cursor: pointer;
+}
+.LibrarySearch span:hover {
+  color: white;
+}
+.LibrarySearch div {
+  display: flex;
+  cursor: pointer;
+}
+.LibrarySearch div p {
+  margin: 0.3em 0.3em 0 0;
+}
+.LibrarySearch div:hover {
+  color: white;
+}
+.LibrarySearch p {
+  font-size: 0.75em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.LibraryContainer {
+  margin: 164px 0 0 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: rgb(21, 21, 21);
+  border-radius: 8px;
+}
+
+.LibraryItemsList {
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 0.2em 0 0.2em 1em;
+  padding: 0;
+  overflow-y: hidden;
+}
+.LibraryItemsList li {
+  display: flex;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.LibraryItemsList li img {
+  border-radius: 4px;
+  margin: 0.6em 0.7em 0 0.5em;
+}
+.LibraryItemsList li h6 {
+  margin-top: 1em;
+  color: White;
+  font-size: 0.92em;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.LibraryItemsList li p {
+  font-weight: 600;
+  color: rgb(163, 161, 154);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.LibraryItemsList li:hover {
+  background-color: rgb(32, 32, 32);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.DescriptionList {
+  display: flex;
+  margin-top: -0.2em;
+}
+.DescriptionList span {
+  color: rgb(0, 190, 85);
+  font-size: 1.2em;
+  transform: rotate(45deg);
+  margin: -0.1em 0.7em 0 -0.5em;
+  z-index: 0;
+}
+.DescriptionList p {
+  font-size: 0.75em;
+}
+
+.PlayerContainer {
+  position: fixed;
+  bottom: 1.5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.Player {
+  color: rgb(75, 75, 75);
+  background-color: rgb(5, 5, 5);
+  width: 99vw;
+  height: 84px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: space-between;
+}
+
+.PlayerGroupActions {
+  display: flex;
+  margin-right: 1.2em;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(163, 161, 154);
+}
+.PlayerGroupActions span {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+.PlayerGroupActions span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.PlayerImg {
+  padding: 0.4em 0.8em 0.8em 1.2em;
+}
+.PlayerImg img {
+  height: 54px;
+  width: 54px;
+  border-radius: 4px;
+}
+
+.PlayerText {
+  margin-top: 1.2em;
+  width: 70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.PlayerText h6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-mask-image: linear-gradient(to right, black 0%, black 80%, transparent 100%);
+          mask-image: linear-gradient(to right, black 0%, black 80%, transparent 100%);
+}
+.PlayerText p {
+  color: rgb(163, 161, 154);
+  font-size: 0.7em;
+}
+
+.PlayerTrack {
+  display: flex;
+}
+.PlayerTrack span {
+  margin: 1em 0 0 0.3em;
+  color: white;
+  font-size: 1.4em;
+}
+.PlayerTrack span:hover {
+  font-size: 1.6em;
+  margin: 0.78em 0 0 0.14em;
+}
+
+.PlayerTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 16px;
+  position: relative;
+  margin: 0;
+  font-size: 0.8em;
+}
+.PlayerTitle a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.PlayerActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.PlayerActions div {
+  display: flex;
+}
+
+.PlayerActionsButtons {
+  display: flex;
+  justify-content: center;
+  margin: 0.4em 2em 0 0;
+  align-items: center;
+  height: 30px;
+}
+.PlayerActionsButtons span {
+  color: rgb(163, 161, 154);
+  padding: 0 0.2em 0 0.2em;
+  align-self: center;
+  transition: ease-in-out 50ms;
+}
+.PlayerActionsButtons span:hover {
+  color: white;
+  transition: ease-in-out 50ms;
+  cursor: pointer;
+}
+
+#PlayCircleActions {
+  font-size: 2.4em;
+  color: white;
+  padding-top: 0;
+  align-self: center;
+  transition: ease-in-out 50ms;
+  width: 50px;
+  justify-self: center;
+}
+
+#PlayCircleActions:hover {
+  transition: ease-in-out 50ms;
+  font-size: 2.6em;
+  padding: 0 0.52em 0 0.15em;
+}
+
+.PlayerActionsTimeLine {
+  -webkit-appearance: none;
+  width: 30vw; /* Ajusta según tus preferencias */
+  height: 4px; /* Ajusta según tus preferencias */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #565656 50%, #565656 100%);
+  outline: none;
+  align-self: center;
+  opacity: 1;
+  transition: opacity 0.2s;
+  border-radius: 2px;
+}
+
+.PlayerActionsTimeLine:hover {
+  opacity: 1;
+}
+
+.PlayerActionsTimeLine::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 0;
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.PlayerActionsTimeLine::-moz-range-thumb {
+  width: 20px; /* Ajusta según tus preferencias */
+  height: 10px; /* Ajusta según tus preferencias */
+  background: #ffffff;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.TimeLineContainer {
+  margin-top: 0.4em;
+}
+
+.TimeLineContainer:hover .PlayerActionsTimeLine::-webkit-slider-thumb {
+  opacity: 1;
+}
+.TimeLineContainer:hover .PlayerActionsTimeLine {
+  background: linear-gradient(to right, rgb(0, 190, 85) 0%, rgb(0, 190, 85) 50%, #565656 50%, #565656 100%);
+}
+
+#TimeLimeP {
+  margin: 0em 0.8em 0 0.8em;
+  font-size: 0.75em;
+}
+
+.PlayerActionsTimeLineMobile {
+  position: fixed;
+  bottom: 11vh;
+  -webkit-appearance: none;
+  width: 90vw;
+  height: 2px; /* Ajusta según tus preferencias */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, rgb(156, 83, 96) 50%, rgb(168, 82, 98) 100%);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.PlayerActionsTimeLineMobile:hover {
+  opacity: 1;
+}
+
+.PlayerActionsTimeLineMobile::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* Ajusta según tus preferencias */
+  height: 20px; /* Ajusta según tus preferencias */
+  background: #ffffff;
+  opacity: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.PlayerActionsTimeLineMobile::-moz-range-thumb {
+  width: 20px; /* Ajusta según tus preferencias */
+  height: 10px; /* Ajusta según tus preferencias */
+  background: #4caf50;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.PlayerActionsVolumeSliderContainer {
+  margin: 0px;
+}
+
+.PlayerActionsVolumeSliderContainer:hover {
+  margin: 0;
+}
+.PlayerActionsVolumeSliderContainer:hover .PlayerActionsVolumeSlider::-webkit-slider-thumb {
+  opacity: 1;
+}
+.PlayerActionsVolumeSliderContainer:hover .PlayerActionsVolumeSlider {
+  background: linear-gradient(to right, rgb(0, 190, 85) 0%, rgb(0, 190, 85) 80%, #565656 80%, #3d3d3d 100%);
+}
+
+.PlayerActionsVolumeSlider {
+  display: flex;
+  -webkit-appearance: none;
+  width: 90px; /* Ajusta según tus preferencias */
+  height: 4px; /* Ajusta según tus preferencias */
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 80%, #565656 80%, #3d3d3d 100%);
+  outline: none;
+  opacity: 1;
+  transition: opacity 0.2s;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.PlayerActionsVolumeSlider:hover {
+  opacity: 1;
+}
+
+.PlayerActionsVolumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px; /* Ajusta según tus preferencias */
+  height: 12px; /* Ajusta según tus preferencias */
+  opacity: 0;
+  margin-left: 1.4em;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.PlayerActionsVolumeSlider::-moz-range-thumb {
+  width: 20px; /* Ajusta según tus preferencias */
+  height: 10px; /* Ajusta según tus preferencias */
+  background: #ffffff;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.prueba {
+  background-color: red;
+  width: 100px;
+  height: 20px;
+}
+
+.TopCardContainer {
+  margin: 1.4em 0 0 0;
+  color: white;
+}
+
+.TopCardButtons {
+  display: flex;
+}
+.TopCardButtons span {
+  margin-left: 0.7em;
+  font-size: 2em;
+  color: rgb(163, 161, 154);
+}
+.TopCardButtons span:hover {
+  color: white;
+}
+
+.TopCardHeader {
+  display: flex;
+  margin: 0;
+  padding: 1.6em;
+}
+.TopCardHeader img {
+  margin-top: 5em;
+  border-radius: 4px;
+}
+.TopCardHeader .TopCardMainInfo {
+  margin: 4.4em 0 0 1.4em;
+}
+.TopCardHeader p {
+  font-size: 0.8em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.TopCardActions {
+  margin: 0;
+}
+
+.FollowButton {
+  border-radius: 24px;
+  font-size: 0.78em;
+  font-weight: 700;
+  height: 30px;
+  padding: 0.1em 1em 0 1em;
+  margin: 0;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(115, 115, 115);
+}
+
+.TopCardExtendedInfo {
+  background: linear-gradient(to bottom, rgb(86, 82, 0), rgb(22, 22, 11), rgb(21, 21, 21));
+  padding: 0.5em 1.6em;
+}
+
+.TopCardDescriptionContainer {
+  margin-top: 3em;
+}
+.TopCardDescriptionContainer p {
+  font-size: 0.9em;
+  color: rgb(163, 161, 154);
+  font-weight: 500;
+}
+
+.TopCardTags {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.Tag {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgb(32, 32, 32);
+  border-radius: 20px;
+  display: flex;
+  padding: 0.5em 1em 0.7em 1em;
+  margin-right: 0.6em;
+  color: white;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+  margin: 0.6em auto 1em 0;
+  flex-wrap: wrap;
+}
+
+#TagStars span {
+  font-size: 1.4em;
+  margin: 0 0.3em;
+}
+
+#TagLanguageLevel {
+  background-color: rgb(133, 18, 228);
+}
+
+.EpisodeCard {
+  display: flex;
+  padding: 1em;
+}
+
+.EpisodeCard:hover {
+  background-color: rgb(32, 32, 32);
+  border-radius: 8px;
+  border-bottom: 0px;
+}
+.EpisodeCard:hover .CardButtonContainerActions {
+  display: flex;
+}
+
+.Title {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.Title h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 0 0.4em;
+  line-height: 1.5em;
+}
+
+.SmallTitle {
+  margin-top: 0.6em;
+  color: rgb(163, 161, 154);
+}
+
+.CardImgContainer {
+  margin-right: 1em;
+}
+
+.CardButtonContainerDesktop {
+  display: flex;
+}
+
+.CardButtonContainerMobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardButtonContainerActions {
+  margin-left: auto;
+  display: none;
+}
+.CardButtonContainerActions span {
+  font-size: 1.6em;
+  margin: 0.6em 0.5em 0 0.5em;
+  color: rgb(163, 161, 154);
+}
+
+.CardButtonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+#MoreVertButton {
+  display: none;
+}
+
+.NextCardContainer {
+  background: rgb(32, 32, 32);
+  color: white;
+  margin: 1.6em;
+  padding: 1em 1em;
+  border-radius: 8px;
+}
+.NextCardContainer .CardImgContainer {
+  margin-right: 0;
+}
+.NextCardContainer .CardImg {
+  display: none;
+}
+.NextCardContainer #MoreVertButton {
+  display: none;
+}
+.NextCardContainer .PlayButton span {
+  color: rgb(0, 190, 85);
+}
+
+.NextCardContainer:hover {
+  background-color: rgb(44, 44, 44);
+}
+.NextCardContainer:hover .EpisodeCard:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+#NextTag {
+  color: rgb(163, 161, 154);
+  margin: 0 0 0.4em 0;
+}
+
+.NotificationNew {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  background-color: rgb(0, 89, 255);
+  padding: 0.2em;
+  margin-top: 0.3em;
+}
+
+.AllCards {
+  padding: 1.6em;
+}
+.AllCards .EpisodeCard {
+  border-bottom: rgb(32, 32, 32) 2px solid;
+}
+
+.AllCardsMenu {
+  list-style-type: none;
+  padding: 0;
+}
+.AllCardsMenu li {
+  font-size: 1em;
+  margin: 0 1.4em 0 0;
+  padding: 0.6em 0;
+}
+.AllCardsMenu .AllCardsMenuItem {
+  color: white;
+  border-bottom: rgb(0, 190, 85) 2px solid;
+  font-weight: 600;
+}
+.AllCardsMenu .AllCardsMenuItemSelected {
+  font-weight: 400;
+  border-bottom: rgb(21, 21, 21) 4px solid;
+}
+.AllCardsMenu .AllCardsMenuItemSelected a {
+  color: rgb(163, 161, 154);
+}
+
+img {
+  border-radius: 4px;
+}
+
+.AllCards #NextTag {
+  display: none;
+}
+
+.TitleAllCards {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+.TitleAllCards .Title {
+  font-weight: 600;
+}
+
+.AllCardsAllEpisodes {
+  display: flex;
+}
+.AllCardsAllEpisodes .Title {
+  margin: 0.2em 0 0 0.2em;
+}
+.AllCardsAllEpisodes span {
+  margin: 0 0 0.8em 0.4em;
+}
+
+.AllCardsRecent {
+  font-weight: 600;
+  display: flex;
+}
+.AllCardsRecent .Title {
+  margin: 0.2em 0 0 0.2em;
+}
+
+#DescriptionTag {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 50px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 3.8em;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.PlayButton span {
+  font-size: 2.6em;
+  color: white;
+  margin-right: 0.4em;
+}
+.PlayButton .SmallTitle {
+  margin-top: 1em;
+}
+
+#Main {
+  height: 2082vh;
+  padding: 0 0 1.6em 0;
+  border-radius: 8px;
+  overflow: auto;
+  background-attachment: fixed;
+  background-size: 100% 300%; /* Tamaño del fondo (ancho, alto multiplicado por 3) */
+  background-position: center top; /* Posición inicial del fondo */
+  background-color: rgb(21, 21, 21);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 33vw;
+  width: 65%;
+  overflow-x: hidden;
+  height: 82vh;
+  margin: 8px 0px 8px 16px;
+}
+
+body {
+  color: white;
+  background-color: rgb(5, 5, 5);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Circular";
+}
+
+.OnlyMobile {
+  display: none;
+}
+
+.OnlyDesktop {
+  display: flex;
+}
+
+@media (max-width: 550px) {
+  .OnlyMobile {
+    display: flex;
+  }
+  .OnlyDesktop {
+    display: none;
+  }
+  .NavContainer {
+    width: 100%;
+  }
+  .NavContainer .Navigation {
+    display: flex;
+  }
+  .NavContainer .ButtonGroup {
+    display: none;
+  }
+  .NavContainerScrolled {
+    border-radius: 0px;
+    background-color: rgb(122, 122, 0);
+    width: 100%;
+  }
+  .NavContainerScrolled .Navigation {
+    display: flex;
+  }
+  .NavContainerScrolled .ButtonGroup {
+    display: none;
+  }
+  .NextButton {
+    display: none;
+  }
+  .MainMenu {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    height: 10vh;
+    margin: 0px;
+    border-radius: 0px;
+  }
+  .MainMenuItems {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .MainMenuItemContainer span {
+    margin-right: 0.7em;
+  }
+  .MainMenuItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    height: 46px;
+    background: linear-gradient(to top, rgba(21, 21, 21, 0) 0%, rgba(21, 21, 21, 0.821) 80%);
+    margin: 0em 0 0 0;
+    width: 34vw;
+    height: 58px;
+    padding: 0.7em;
+    align-items: center;
+  }
+  .MainMenuItemContainer span {
+    height: 20px;
+    margin: 0 0 0 0;
+    font-weight: 300;
+    font-size: 2.1em;
+  }
+  .MainMenuItemContainer p {
+    font-size: 0.8em;
+    margin: 1.1em 0 0 0;
+  }
+  .MainMenuItemContainer:first-child {
+    padding: 1em;
+    border-radius: 0;
+    margin: 0em 0 0 0;
+    width: 34vw;
+    height: 58px;
+    padding: 0.7em;
+    align-items: center;
+    background: linear-gradient(to top, rgba(21, 21, 21, 0) 0%, rgba(21, 21, 21, 0.821) 80%);
+  }
+  .MainMenuItemContainer:last-child {
+    padding: 1em;
+    border-radius: 0;
+    margin: 0em 0 0 0;
+    width: 34vw;
+    height: 58px;
+    padding: 0.7em;
+    float: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(21, 21, 21, 0) 0%, rgba(21, 21, 21, 0.821) 80%);
+  }
+  #LibraryItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LibraryContainer {
+    display: none;
+  }
+  .LightIcons {
+    display: none;
+  }
+  .LightIcons span {
+    font-weight: 100;
+    stroke: 1px solid rgb(211, 22, 22);
+  }
+  #Main {
+    position: fixed;
+    display: flex;
+    left: 0;
+    width: 104vw;
+    margin: 0px;
+    border-radius: 0px;
+  }
+  .TopCardHeader {
+    padding: 1em;
+  }
+  .TopCardDescriptionInfo {
+    display: none;
+  }
+  .TopCardExtendedInfo {
+    padding: 1em;
+  }
+  .TopCardTags {
+    display: flex;
+    flex-direction: row;
+  }
+  .TopCardTags .Tag {
+    margin-right: 0.8em;
+    margin-bottom: 0;
+  }
+  .TopCardMainInfo {
+    margin: 4.4em 0 0 0.6em;
+  }
+  .TopCardMainInfo h1 {
+    font-size: 2.4em;
+  }
+  .TopCardMainInfo h4 {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  #MoreVertButton {
+    display: flex;
+  }
+  .NextCardContainer {
+    margin: 1em;
+  }
+  .NextCardContainer .EpisodeCard {
+    display: flex;
+    padding: 0;
+  }
+  .NextCardContainer .CardImg {
+    display: flex;
+  }
+  .NextCardContainer .CardImg img {
+    width: 70px;
+    height: 70px;
+  }
+  .NextCardContainer .CardInfoContainer {
+    margin-left: 1em;
+  }
+  .NextCardContainer .CardInfoContainer .CardDescription .NotificationNew {
+    display: none;
+  }
+  .NextCardContainer .CardInfoContainer .CardDescription .Title h6 {
+    margin: 0;
+  }
+  .NextCardContainer .CardInfoContainer .CardDescription #TitleProgram {
+    display: none;
+  }
+  .NextCardContainer .CardInfoContainer .CardDescription .CardButtonContainerMobile .CardButtonGroup {
+    display: none;
+  }
+  .NextCardContainer #NextTag {
+    display: none;
+  }
+  .NextCardContainer #DescriptionTag {
+    display: none;
+  }
+  .NextCardContainer .CardButtonContainer {
+    display: none;
+  }
+  .AllCards {
+    padding: 0em 1em;
+  }
+  .AllCards #DescriptionTag {
+    font-size: 0.8em;
+    margin-top: 0.4em;
+    margin-left: -5em;
+    height: 60px;
+  }
+  .EpisodeCard {
+    padding: 1em 0;
+  }
+  .TitleAllCards {
+    justify-content: left;
+  }
+  .TitleAllCards .Title {
+    font-weight: 600;
+  }
+  .CardImgContainer {
+    margin-right: 0.6em;
+  }
+  .CardImgContainer img {
+    width: 50px;
+    height: 50px;
+  }
+  .CardDescription h6 {
+    font-weight: 500;
+  }
+  .Player {
+    position: fixed;
+    bottom: 11vh;
+    width: 95vw;
+    height: 68px;
+    padding: 0 0 8px 8;
+    margin: 8px 8px 0 8px;
+    border-radius: 8px;
+    background-color: rgb(126, 46, 59);
+    display: grid;
+    grid-template-columns: 70% 10%;
+  }
+  .PlayerContainer {
+    bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    width: 94vw;
+    margin-left: 3vw;
+  }
+  .PlayerContainer .PlayerActions {
+    display: none;
+  }
+  .PlayerContainer .PlayerText h6 {
+    -webkit-mask-image: linear-gradient(to right, rgb(126, 46, 59) 0%, rgb(126, 46, 59) 80%, transparent 100%);
+            mask-image: linear-gradient(to right, rgb(126, 46, 59) 0%, rgb(126, 46, 59) 80%, transparent 100%);
+  }
+  .PlayerContainer .PlayerActionsButtons {
+    display: none;
+  }
+  .PlayerContainer .PlayerGroupActions span {
+    font-size: 1.9em;
+    color: white;
+    margin: 0 0 0 0.3em;
+  }
+  .PlayerContainer .TimeLineContainer {
+    display: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+}
+
+/* Cambios en la barra de desplazamiento cuando el cursor está sobre ella */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo */
+}
+
+/* Estilo del thumb (el "botón" de la barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0); /* Color del thumb */
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+/* Estilo del thumb cuando el cursor está sobre él */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(111, 111, 111, 0.9); /* Cambia el color del thumb al pasar el cursor sobre él */
+  height: 10px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+/* Estilo del track (la pista de la barra de desplazamiento) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Fondo del track */
+}/*# sourceMappingURL=globals.css.map */

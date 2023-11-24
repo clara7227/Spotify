@@ -1,0 +1,90 @@
+@import "../variables.modules";
+@import "../mixins.scss";
+
+.TopCardContainer {
+   
+  margin: 1.4em 0 0 0;
+  color: white;
+  
+}
+.TopCardButtons {
+  display: flex;
+  span {
+    margin-left: 0.7em;
+    font-size: 2em;
+    color: $gris-1-muy-claro;
+  }
+  span:hover {
+    color: white;
+  }
+}
+.TopCardHeader {
+  display: flex;
+  margin: 0;
+  padding: $padding-sides;
+  
+  img {
+    margin-top: 5em;
+    border-radius: 4px;
+  }
+  .TopCardMainInfo {
+    margin: 4.4em 0 0 1.4em;
+  }
+  p {
+    font-size: 0.8em;
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+.TopCardActions {
+  margin: 0;
+}
+.FollowButton {
+  @include ButtonStandard2;
+  padding: 0.1em 1em 0 1em;
+  margin: 0;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid $gris-claro;
+}
+
+/// INFO
+ .TopCardExtendedInfo {
+    background: linear-gradient(
+    to bottom,
+    rgb(86, 82, 0),
+    rgb(22, 22, 11),
+    $gris-1-oscuro
+  );
+  
+  padding: 0.5em $padding-sides;
+
+ }
+.TopCardDescriptionContainer {
+  margin-top: 3em;
+  p {
+    font-size: 0.9em;
+    color: $gris-1-muy-claro;
+    font-weight: 500;
+  }
+}
+.TopCardTags {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.Tag {
+  @include Tag;
+  margin: 0.6em auto 1em 0;
+  flex-wrap: wrap;
+}
+#TagStars {
+  span {
+    font-size: 1.4em;
+    margin: 0 0.3em
+  }
+}
+#TagLanguageLevel {
+    background-color: rgb(133, 18, 228);
+}

@@ -1,0 +1,23 @@
+let cantidad = number(prompt("Cuántos euros quieres convertir"));
+let moneda = prompt("¿Qué moneda quieres?");
+
+let rupias = 80.75;
+let dolares = 0.9;
+let libra = 1.3;
+
+switch (moneda.toLoweCase()) {
+  case "dolares":
+    alert(`Tu cantidad equivale a ${cantidad * dolares}dolares`);
+    break;
+  case "rupias":
+    alert(`Tu cantidad equivale a ${cantidad * rupias}dolares`);
+    break;
+  case "libra":
+    alert(`Tu cantidad equivale a ${cantidad * libra}dolares`);
+    break;
+  default:
+    alert(`Lo siento pero todavía no tenemos ${moneda}`);
+    break;
+}
+
+//expresiones ternarias para if else
