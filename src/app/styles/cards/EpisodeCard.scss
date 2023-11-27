@@ -26,7 +26,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     position: relative;
-    font-size: 1em;
     font-weight: 700;
     margin:0 0 0 0.4em;
         line-height: 1.5em;
@@ -35,6 +34,7 @@
 .SmallTitle {
     margin-top: 0.6em;
     color: $gris-1-muy-claro;
+
 }
 //img
 .CardImgContainer {
@@ -69,17 +69,26 @@
     background: $gris-2-oscuro;
     color: white;
     margin: $padding-sides;
-    padding: 1em 1em;
+    padding: 0.6em;
     border-radius:8px;
     
     .CardImgContainer {
         margin-right: 0;
+        height: 70px;
     }
     .CardImg {
         display: none;
+        img {
+            height: 60px;
+            width: 60px;
+        }
     }
     #MoreVertButton {
         display:none;
+    }
+    .SmallTitle {
+        font-size: 1em;
+    
     }
     .CardButtonContainerDesktop{
    }

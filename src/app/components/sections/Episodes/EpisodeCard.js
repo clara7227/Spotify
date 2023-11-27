@@ -34,12 +34,13 @@ function EpisodeCard() {
           </div>
           <div className="SmallTitle OnlyDesktop" id="TitleProgram" >Diseño y Diáspora</div>
           <div className="SmallTitle" id="DescriptionTag">
-            Paqui Calderón, Lucía Morate Benito, Gloria Jimenez Costa y Darío
+           <p>Paqui Calderón, Lucía Morate Benito, Gloria Jimenez Costa y Darío
             Pascual participan de un espacio de introspección, reflexión y
             socialización a través del juego. En esta charla nos cuentan como se
             relacionan con el juego desde sus diferentes profesiones, porqué son
             parte de este espacio y cómo es la experiencia de jugar juntes.
-          </div>
+         </p> 
+         </div>
 
           <div className="CardButtonContainerDesktop OnlyDesktop">
             <div className="PlayButton">

@@ -4,6 +4,9 @@ import { Component } from "react";
 import TopCardEpisode from "../components/sections/EpisodePage/TopCardEpisode";
 import Layout from "./layout";
 import MainMenu from "../components/MainMenu"
+import MainPlayer from "./components/MainPlayer";
+import Player from "../components/Player";
+import PlayerAside from "./components/PlayerAside"
 
 //CUANDO NO TENÍA LAYOUT METIDA EN LA PAGE, LA PAGINA CARGABA, TODOS LOS ELEMENTOS
 // DIVS, ETC, CARGABAN, PERO NO SE VEÍAN EN LA PANTALLA
@@ -11,8 +14,10 @@ import MainMenu from "../components/MainMenu"
 function Page() {
   return (
     <Layout>
-      <MainMenu/>
-      <TopCardEpisode/>
+    <MainMenu/>
+    <MainPlayer/>
+    <PlayerAside/>
+    <Player/>
     </Layout>
     
    

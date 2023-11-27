@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#MainPlayer {
+  height: 2082vh;
+  padding: 0 0 1.6em 0;
+  border-radius: 8px;
+  overflow: auto;
+  background-attachment: fixed;
+  background-size: 100% 300%; /* Tamaño del fondo (ancho, alto multiplicado por 3) */
+  background-position: center top; /* Posición inicial del fondo */
+  background-color: rgb(21, 21, 21);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 33vw;
+  width: 36vw;
+  overflow-x: hidden;
+  height: 82vh;
+  margin: 8px 0px 8px 16px;
+}
+#MainPlayer .NavContainer {
+  width: 36vw;
+}
+#MainPlayer .NavContainerScrolled {
+  width: 36vw;
+}/*# sourceMappingURL=MainPlayer.css.map */

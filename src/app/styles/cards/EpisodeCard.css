@@ -23,7 +23,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   position: relative;
-  font-size: 1em;
   font-weight: 700;
   margin: 0 0 0 0.4em;
   line-height: 1.5em;
@@ -70,17 +69,25 @@
   background: rgb(32, 32, 32);
   color: white;
   margin: 1.6em;
-  padding: 1em 1em;
+  padding: 0.6em;
   border-radius: 8px;
 }
 .NextCardContainer .CardImgContainer {
   margin-right: 0;
+  height: 70px;
 }
 .NextCardContainer .CardImg {
   display: none;
 }
+.NextCardContainer .CardImg img {
+  height: 60px;
+  width: 60px;
+}
 .NextCardContainer #MoreVertButton {
   display: none;
+}
+.NextCardContainer .SmallTitle {
+  font-size: 1em;
 }
 .NextCardContainer .PlayButton span {
   color: rgb(0, 190, 85);

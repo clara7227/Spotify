@@ -1,16 +1,17 @@
 "use client";
 import { Component } from "react";
-import { Nav } from "./nav/Nav";
-import { TopCard } from "./sections/ProfilePage/TopCard";
-import { NextCard } from "./sections/ProfilePage/NextCard";
-import { AllCards } from "./sections/ProfilePage/AllCards";
+import { Nav } from "../../components/nav/Nav";
+
+import { TopCard } from "../../components/sections/ProfilePage/TopCard";
+import { NextCard } from "../../components/sections/ProfilePage/NextCard";
+import { AllCards } from "../../components/sections/ProfilePage/AllCards";
 import "bootstrap/dist/css/bootstrap.min.css";
 // O si estás usando SCSS o Sass, puedes importar el archivo SCSS de la siguiente manera:
 import "bootstrap/scss/bootstrap.scss";
 
-function Main() {
+function MainPlayer() {
   return (
-    <div id="Main">
+    <div id="MainPlayer">
       <div className="MainTop">
         <Nav />
         <TopCard />
@@ -21,4 +22,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default MainPlayer;

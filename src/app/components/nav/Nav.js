@@ -24,10 +24,34 @@ export function Nav() {
       }
     };
 
+    //PARA QUE HAGA SCROLL EN PLAYER
+    const handleScrollPlayer = () => {
+      const mainElement = document.getElementById("MainPlayer");
+      if (mainElement) {
+        // Verificar si el scroll es mayor a 100px
+        if (mainElement.scrollTop > 500) {
+          // Si es mayor a 100px, establecer la clase
+          setScrolled(true);
+        } else {
+          // Si es menor a 100px, eliminar la clase
+          setScrolled(false);
+        }
+      }
+    };
+
+
+    
+
     const main = document.getElementById("Main");
     if (main) {
       main.addEventListener("scroll", handleScroll);
     }
+    
+    const mainPlayer = document.getElementById("MainPlayer");
+    if (mainPlayer) {
+      mainPlayer.addEventListener("scroll", handleScrollPlayer);
+    }
+
 
     return () => {
       if (main) {

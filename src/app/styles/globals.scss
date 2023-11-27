@@ -5,6 +5,8 @@
 @import "cards/TopCard.scss";
 @import "cards/EpisodeCard.scss";
 @import "mixins.scss";
+@import "playerpage/MainPlayer.scss";
+@import "playerpage/PlayerAside.scss";
 a {
   text-decoration: none;
   color: white;
@@ -13,9 +15,17 @@ h1 {
   font-size: 3.8em;
   font-weight: 800;
 }
+h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
 h4 {
   font-size: 1.2em;
   font-weight: 800;
+}
+h5 {
+  font-size: 1em;
+  font-weight:500;
 }
 //BUTTONS
 .PlayButton {
@@ -38,7 +48,7 @@ h4 {
   //  max-width:calc(100vw - 280px);
   width: 65%;
   overflow-x: hidden;
-  height: 82vh;
+  height: 79vh;
   margin: 8px 0px 8px 16px;
 }
 
@@ -79,6 +89,15 @@ body {
   }
   .OnlyDesktop {
     display: none;
+  }
+  p {
+    font-size: 0.7em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  h6 {
+    font-size: 0.8em;
   }
   //NAV
   .NavContainer {
@@ -209,6 +228,14 @@ body {
   .TopCardHeader {
     padding: 1em;
   }
+  .TopCardContainer {
+    p {
+      font-size: 0.7em;
+    }
+  }
+  .TopCardDescriptionContainer {
+    margin: 1em 0 0 0;
+  }
   .TopCardDescriptionInfo {
     display: none;
   }
@@ -221,6 +248,7 @@ body {
     .Tag {
       margin-right: 0.8em;
       margin-bottom: 0;
+      font-size: 0.7em;
     }
   }
   .TopCardMainInfo {
@@ -229,12 +257,23 @@ body {
       font-size: 2.4em;
     }
     h4 {
-      font-size: 1em;
       font-weight: 500;
+    }
+  }
+  .TopCardButtons {
+    button {
+      font-size: 0.7em;
+    }
+    span {
+      font-size: 1.4em;
+      align-items: center;
     }
   }
   #MoreVertButton {
     display: flex;
+  }
+  .CardDescriptionShowMore {
+    font-size: 0.8em;
   }
   //CARD
   //NEXT EPISODE
@@ -243,12 +282,22 @@ body {
     .EpisodeCard {
       display: flex;
       padding: 0;
+      .CardImgContainer {
+        margin-right: 0;
+        height: 60px;
+      }
+      .SmallTitle {
+        font-size: 0.7em;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
     }
+
     .CardImg {
       display: flex;
       img {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
       }
     }
     .CardInfoContainer {
@@ -265,14 +314,14 @@ body {
         #TitleProgram {
           display: none;
         }
-        .CardButtonContainerMobile {
-          .CardButtonGroup {
-            display: none;
-          }
+      }
+      .CardButtonContainerMobile {
+        .CardButtonGroup {
+          display: none;
         }
       }
     }
-    
+
     #NextTag {
       display: none;
     }
@@ -286,12 +335,59 @@ body {
   //ALLCARDS
   .AllCards {
     padding: 0em 1em;
-     #DescriptionTag {
-          font-size: 0.8em;
-          margin-top: 0.4em;
-          margin-left: -5em;
-          height:60px;
+    #DescriptionTag {
+      font-size: 0.8em;
+      margin-top: 0.4em;
+      margin-left: -4em;
+      height: 3em;
+    }
+    li {
+      a {
+        font-size: 0.8em;
+      }
+      a:last-child {
+        font-size: 0.8em;
+      }
+    }
+    .TitleAllCards {
+      font-size: 1em;
+    }
+    .SmallTitle {
+      height: 3em;
+      p {
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        height: 3em;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+    .CardButtonContainerMobile {
+      margin-left: -3.2em;
+      .SmallTitle {
+        font-size: 0.7em;
+        height: 2em;
+      }
+      .CardButtonGroup {
+     
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          span {
+            color: $gris-1-muy-claro;
+            margin-right: 0.6em;
+            font-size: 1.3em;
+          }
         }
+        .PlayButton {
+          span 
+          {
+            font-size: 1.8em
+          }
+        }
+      }
+    }
   }
   .EpisodeCard {
     padding: 1em 0;
@@ -301,12 +397,15 @@ body {
     .Title {
       font-weight: 600;
     }
+    span {
+      font-size: 18px;
+    }
   }
   .CardImgContainer {
     margin-right: 0.6em;
     img {
-      width: 50px;
-      height: 50px;
+      height: 44px;
+      width: 44px;
     }
   }
   .CardDescription {

@@ -835,7 +835,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   position: relative;
-  font-size: 1em;
   font-weight: 700;
   margin: 0 0 0 0.4em;
   line-height: 1.5em;
@@ -882,17 +881,25 @@
   background: rgb(32, 32, 32);
   color: white;
   margin: 1.6em;
-  padding: 1em 1em;
+  padding: 0.6em;
   border-radius: 8px;
 }
 .NextCardContainer .CardImgContainer {
   margin-right: 0;
+  height: 70px;
 }
 .NextCardContainer .CardImg {
   display: none;
 }
+.NextCardContainer .CardImg img {
+  height: 60px;
+  width: 60px;
+}
 .NextCardContainer #MoreVertButton {
   display: none;
+}
+.NextCardContainer .SmallTitle {
+  font-size: 1em;
 }
 .NextCardContainer .PlayButton span {
   color: rgb(0, 190, 85);
@@ -994,6 +1001,115 @@ img {
   position: relative;
 }
 
+#MainPlayer {
+  height: 2082vh;
+  padding: 0 0 1.6em 0;
+  border-radius: 8px;
+  overflow: auto;
+  background-attachment: fixed;
+  background-size: 100% 300%; /* Tamaño del fondo (ancho, alto multiplicado por 3) */
+  background-position: center top; /* Posición inicial del fondo */
+  background-color: rgb(21, 21, 21);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 33vw;
+  width: 36vw;
+  overflow-x: hidden;
+  height: 82vh;
+  margin: 8px 0px 8px 16px;
+}
+#MainPlayer .NavContainer {
+  width: 36vw;
+}
+#MainPlayer .NavContainerScrolled {
+  width: 36vw;
+}
+
+.MotherLanguage {
+  color: white;
+}
+
+.OtherLanguage {
+  color: rgb(255, 213, 0);
+}
+
+.PlayerAside {
+  background-color: rgb(21, 21, 21);
+  padding: 1em;
+  margin: 8px 8px 8px 12px;
+  border-radius: 8px;
+  position: fixed;
+  left: 70vw;
+  overflow: auto;
+  height: 82vh;
+  overflow-x: hidden;
+}
+.PlayerAside p {
+  font-size: 0.74em;
+}
+.PlayerAside b {
+  font-size: 0.74em;
+}
+.PlayerAside h5 {
+  opacity: 0.7;
+}
+
+.LanguageContainer {
+  display: flex;
+}
+.LanguageContainer .Title {
+  display: flex;
+  flex-direction: column;
+}
+.LanguageContainer .TitleButtons {
+  display: flex;
+  margin-top: 0.4em;
+}
+.LanguageContainer .TitleButtons span {
+  font-size: 1.2em;
+  color: rgb(163, 161, 154);
+  margin-right: 0.4em;
+}
+.LanguageContainer .Functionality span {
+  color: white;
+  background-color: rgb(194, 2, 194);
+  border-radius: 24px;
+  height: 30px;
+  width: 30px;
+  padding: 0.2em 0 0 0.2em;
+  margin-top: 0.2em;
+  font-size: 1.35em;
+  font-weight: 600;
+  box-shadow: 2px 2px 0px 0px rgba(100, 4, 67, 0.75);
+}
+
+.TranscriptionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.TextTranscription {
+  border-radius: 24px;
+  background-color: rgb(32, 32, 32);
+  padding: 1.5em 1em 0.2em 1em;
+  margin: 0 0.4em 0 0;
+}
+
+.Listened {
+  font-weight: 600;
+}
+
+.Hightlight {
+  background-color: rgba(255, 255, 255, 0.179);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.NotListened {
+  opacity: 0.4;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -1004,9 +1120,19 @@ h1 {
   font-weight: 800;
 }
 
+h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
 h4 {
   font-size: 1.2em;
   font-weight: 800;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .PlayButton span {
@@ -1033,7 +1159,7 @@ h4 {
   left: 33vw;
   width: 65%;
   overflow-x: hidden;
-  height: 82vh;
+  height: 79vh;
   margin: 8px 0px 8px 16px;
 }
 
@@ -1059,6 +1185,15 @@ body {
   }
   .OnlyDesktop {
     display: none;
+  }
+  p {
+    font-size: 0.7em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  h6 {
+    font-size: 0.8em;
   }
   .NavContainer {
     width: 100%;
@@ -1170,6 +1305,12 @@ body {
   .TopCardHeader {
     padding: 1em;
   }
+  .TopCardContainer p {
+    font-size: 0.7em;
+  }
+  .TopCardDescriptionContainer {
+    margin: 1em 0 0 0;
+  }
   .TopCardDescriptionInfo {
     display: none;
   }
@@ -1183,6 +1324,7 @@ body {
   .TopCardTags .Tag {
     margin-right: 0.8em;
     margin-bottom: 0;
+    font-size: 0.7em;
   }
   .TopCardMainInfo {
     margin: 4.4em 0 0 0.6em;
@@ -1191,11 +1333,20 @@ body {
     font-size: 2.4em;
   }
   .TopCardMainInfo h4 {
-    font-size: 1em;
     font-weight: 500;
+  }
+  .TopCardButtons button {
+    font-size: 0.7em;
+  }
+  .TopCardButtons span {
+    font-size: 1.4em;
+    align-items: center;
   }
   #MoreVertButton {
     display: flex;
+  }
+  .CardDescriptionShowMore {
+    font-size: 0.8em;
   }
   .NextCardContainer {
     margin: 1em;
@@ -1204,12 +1355,21 @@ body {
     display: flex;
     padding: 0;
   }
+  .NextCardContainer .EpisodeCard .CardImgContainer {
+    margin-right: 0;
+    height: 60px;
+  }
+  .NextCardContainer .EpisodeCard .SmallTitle {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
   .NextCardContainer .CardImg {
     display: flex;
   }
   .NextCardContainer .CardImg img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .NextCardContainer .CardInfoContainer {
     margin-left: 1em;
@@ -1223,7 +1383,7 @@ body {
   .NextCardContainer .CardInfoContainer .CardDescription #TitleProgram {
     display: none;
   }
-  .NextCardContainer .CardInfoContainer .CardDescription .CardButtonContainerMobile .CardButtonGroup {
+  .NextCardContainer .CardInfoContainer .CardButtonContainerMobile .CardButtonGroup {
     display: none;
   }
   .NextCardContainer #NextTag {
@@ -1241,8 +1401,47 @@ body {
   .AllCards #DescriptionTag {
     font-size: 0.8em;
     margin-top: 0.4em;
-    margin-left: -5em;
-    height: 60px;
+    margin-left: -4em;
+    height: 3em;
+  }
+  .AllCards li a {
+    font-size: 0.8em;
+  }
+  .AllCards li a:last-child {
+    font-size: 0.8em;
+  }
+  .AllCards .TitleAllCards {
+    font-size: 1em;
+  }
+  .AllCards .SmallTitle {
+    height: 3em;
+  }
+  .AllCards .SmallTitle p {
+    margin-top: 0.4em;
+    font-size: 0.8em;
+    height: 3em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .AllCards .CardButtonContainerMobile {
+    margin-left: -3.2em;
+  }
+  .AllCards .CardButtonContainerMobile .SmallTitle {
+    font-size: 0.7em;
+    height: 2em;
+  }
+  .AllCards .CardButtonContainerMobile .CardButtonGroup div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .AllCards .CardButtonContainerMobile .CardButtonGroup div span {
+    color: rgb(163, 161, 154);
+    margin-right: 0.6em;
+    font-size: 1.3em;
+  }
+  .AllCards .CardButtonContainerMobile .CardButtonGroup .PlayButton span {
+    font-size: 1.8em;
   }
   .EpisodeCard {
     padding: 1em 0;
@@ -1253,12 +1452,15 @@ body {
   .TitleAllCards .Title {
     font-weight: 600;
   }
+  .TitleAllCards span {
+    font-size: 18px;
+  }
   .CardImgContainer {
     margin-right: 0.6em;
   }
   .CardImgContainer img {
-    width: 50px;
-    height: 50px;
+    height: 44px;
+    width: 44px;
   }
   .CardDescription h6 {
     font-weight: 500;
